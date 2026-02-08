@@ -32,8 +32,8 @@ Click the **Fork** button at the top right of this repository.
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/yourusername/My-Notes-Github.git
-cd My-Notes-Github
+git clone https://github.com/usaihack/My-Notes.git
+cd My-Notes
 ```
 
 ### 3. Create a Branch

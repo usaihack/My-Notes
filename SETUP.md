@@ -18,13 +18,13 @@ This guide will help you set up the optimal environment for viewing and synchron
 
 ```bash
 # Using HTTPS
-git clone https://github.com/yourusername/My-Notes-Github.git
+git clone https://github.com/usaihack/My-Notes.git
 
 # Or using SSH
-git clone git@github.com:yourusername/My-Notes-Github.git
+git clone git@github.com:usaihack/My-Notes.git
 
 # Navigate to directory
-cd My-Notes-Github
+cd My-Notes
 ```
 
 ### Step 2: Install Obsidian
@@ -51,7 +51,7 @@ Obsidian provides the best viewing experience for these markdown notes with feat
 
 1. Launch Obsidian
 2. Click **"Open folder as vault"**
-3. Navigate to your cloned `My-Notes-Github` directory
+3. Navigate to your cloned `My-Notes` directory
 4. Select the folder and click **"Open"**
 
 ✅ Your notes are now ready to explore in Obsidian!
@@ -91,7 +91,7 @@ For seamless two-way sync across all your devices, use MEGA Cloud Storage.
 1. Open MEGA Desktop app
 2. Go to **Settings** → **Syncs**
 3. Click **"Add Sync"**
-4. **Local folder:** Select your `My-Notes-Github` directory
+4. **Local folder:** Select your `My-Notes` directory
 5. **MEGA folder:** Create/select `EthicalHackingNotes` folder
 6. Click **"Add"**
 

@@ -31,25 +31,25 @@ This repository chronicles my **18-month journey** from novice to all-in-one eth
 This repository is organized into **18 monthly directories**, each covering critical domains of ethical hacking:
 
 ```
-📦 Ethical-Hacking-Journey
-├── 📁 Month-01/          # Fundamentals & Networking Basics
-├── 📁 Month-02/          # Linux Essentials & Command Line
-├── 📁 Month-03/          # Reconnaissance & Information Gathering
-├── 📁 Month-04/          # Scanning & Enumeration
-├── 📁 Month-05/          # Vulnerability Assessment
-├── 📁 Month-06/          # Web Application Security
-├── 📁 Month-07/          # SQL Injection & Database Attacks
-├── 📁 Month-08/          # XSS, CSRF & Client-Side Attacks
-├── 📁 Month-09/          # Network Exploitation
-├── 📁 Month-10/          # Wireless Security & Attacks
-├── 📁 Month-11/          # Social Engineering
-├── 📁 Month-12/          # Malware Analysis & Reverse Engineering
-├── 📁 Month-13/          # Post-Exploitation & Privilege Escalation
-├── 📁 Month-14/          # Active Directory & Domain Attacks
-├── 📁 Month-15/          # Mobile Security (Android/iOS)
-├── 📁 Month-16/          # Cloud Security (AWS/Azure/GCP)
-├── 📁 Month-17/          # Red Team Operations & Evasion
-└── 📁 Month-18/          # Reporting, Documentation & Certifications
+📦 My-Notes
+├── 📁 Month-01/          # Linux understanding
+├── 📁 Month-02/          # Coming soon...
+├── 📁 Month-03/          # Coming soon...
+├── 📁 Month-04/          # Coming soon...
+├── 📁 Month-05/          # Coming soon...
+├── 📁 Month-06/          # Coming soon...
+├── 📁 Month-07/          # Coming soon...
+├── 📁 Month-08/          # Coming soon...
+├── 📁 Month-09/          # Coming soon...
+├── 📁 Month-10/          # Coming soon...
+├── 📁 Month-11/          # Coming soon...
+├── 📁 Month-12/          # Coming soon...
+├── 📁 Month-13/          # Coming soon...
+├── 📁 Month-14/          # Coming soon...
+├── 📁 Month-15/          # Coming soon...
+├── 📁 Month-16/          # Coming soon...
+├── 📁 Month-17/          # Coming soon...
+└── 📁 Month-18/          # Coming soon...
 ```
 
 ---
@@ -88,7 +88,7 @@ To explore these notes in the best possible format:
 1. **Install Obsidian** - Download from [obsidian.md](https://obsidian.md/)
 2. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/My-Notes-Github.git
+   git clone https://github.com/usaihack/My-Notes.git
    ```
 3. **Open in Obsidian** - Use "Open folder as vault" and select the cloned directory
 
@@ -147,10 +147,10 @@ By the end of this journey, the goal is to be prepared for:
 
 ## 📊 Progress Tracker
 
-| Month | Status         | Topics Covered          | Completion    |
-| ----- | -------------- | ----------------------- | ------------- |
-| 01    | 🔄 In Progress | Networking Fundamentals | ░░░░░░░░░░ 0% |
-| 02-18 | ⏳ Upcoming    | -                       | -             |
+| Month | Status         | Topics Covered      | Completion     |
+| ----- | -------------- | ------------------- | -------------- |
+| 01    | 🔄 In Progress | Linux understanding | ████████░░ 80% |
+| 02-18 | ⏳ Upcoming    | -                   | -              |
 
 ---
 

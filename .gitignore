@@ -1,16 +1,5 @@
 # Obsidian
 .obsidian/
-.obsidian/workspace
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
-.obsidian/plugins/
-.obsidian/hotkeys.json
-.obsidian/graph.json
-.obsidian/appearance.json
-.obsidian/core-plugins.json
-.obsidian/community-plugins.json
-.obsidian/themes/
 
 # Obsidian Trash
 .trash/
