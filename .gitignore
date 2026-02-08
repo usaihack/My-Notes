@@ -1,0 +1,52 @@
+# Obsidian
+.obsidian/
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/
+.obsidian/hotkeys.json
+.obsidian/graph.json
+.obsidian/appearance.json
+.obsidian/core-plugins.json
+.obsidian/community-plugins.json
+.obsidian/themes/
+
+# Obsidian Trash
+.trash/
+
+# System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Editor Specific
+.vscode/
+.idea/
+*.sublime-*
+
+# MEGA Sync
+.megaignore
+*.mega
+
+# Personal Notes (if you want to keep some notes private)
+# private/
+# personal/
+
+# Log Files
+*.log
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar.gz
