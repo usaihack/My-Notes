@@ -1,8 +1,8 @@
+### **Some Basic but useful Shortcuts for Productivity:**
 
-### **Some Basic but useful Shortcuts for Productivity**:
-
+| Shortcut         | Action                                |
+| :--------------- | :------------------------------------ |
 | ctrl + shift + R | Split Terminal                        |
-| ---------------- | ------------------------------------- |
 | ctrl + shift + E | Close split terminal                  |
 | ctrl + shift + T | New Terminal Tab                      |
 | ctrl + A         | Move cursor to start of the command   |
@@ -11,11 +11,11 @@
 | ctrl + U         | Delete command from end to start      |
 | ctrl + L         | clears the Terminal or use `clear`    |
 
-
 ### **Some Basic but useful Commands:**
 
+| Command                             | Description                                                                                                                                                                                                                                                                                                               |
+| :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `pwd`                               | current working directory                                                                                                                                                                                                                                                                                                 |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `ls`                                | list all the files and directories                                                                                                                                                                                                                                                                                        |
 | `ls -a`                             | list all the files and directories along with hidden ones                                                                                                                                                                                                                                                                 |
 | `ls -l`                             | list files and directories with some details                                                                                                                                                                                                                                                                              |
