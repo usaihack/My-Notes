@@ -66,7 +66,7 @@ We use a tool called `chmod` for changing permissions. Here's how:
 3. The rest of the method is same and changes permissions by `chmod` as we did for files.
 4. Remember that for directories, if you want to add or delete a file (`w`), the executing permission `x` is must. Otherwise it will neither delete nor create (means write).
 
-   ##### ==But why??==
+   ##### But why??
 
    Because a directory is only a bucket which stores names only. So to remove or add some elements in that bucket, you must enter the bucket first 😉 and only then can you delete or add something.
 
