@@ -107,6 +107,6 @@ groups
 
 <div align="center">
 
-**[⬅️ Day 3: Permissions](./Day-3,%20Permissions.md)** • **[🏠 Back to Home](./README.md)**
+**[⬅️ Day 3: Permissions](./Day-3,%20Permissions.md)** • **[Day 5: Understanding Linux Processes ➡️](./Day-5,%Processes.md)**
 
 </div>
