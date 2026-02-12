@@ -70,8 +70,6 @@ Signals change the state of a process. Here is the relationship:
 
 <div align="center">
 
-```markdown
 **[⬅️ Day 6: Processes & Signals](./Day-6,%20...continue%20Processes,%20New%20Topic%20Signals.md)** • **[Day 8: Services ➡️](./Day-08,%20SERVICES.md)**
-```
 
 </div>
