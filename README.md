@@ -33,7 +33,7 @@ This repository is organized into **18 monthly directories**, each covering crit
 ```
 📦 My-Notes
 ├── 📁 Month-01/          # Linux understanding
-├── 📁 Month-02/          # Coming soon...
+├── 📁 Month-02/          # Networking Basics
 ├── 📁 Month-03/          # Coming soon...
 ├── 📁 Month-04/          # Coming soon...
 ├── 📁 Month-05/          # Coming soon...
@@ -147,10 +147,11 @@ By the end of this journey, the goal is to be prepared for:
 
 ## 📊 Progress Tracker
 
-| Month | Status         | Topics Covered      | Completion     |
-| ----- | -------------- | ------------------- | -------------- |
-| 01    | 🔄 In Progress | Linux understanding | ████████░░ 80% |
-| 02-18 | ⏳ Upcoming    | -                   | -              |
+| Month | Status         | Topics Covered      | Completion      |
+| ----- | -------------- | ------------------- | --------------- |
+| 01    | ✅ Completed   | Linux understanding | ██████████ 100% |
+| 02    | 🔄 In Progress | Networking Basics   | ▌░░░░░░░░░ 5%   |
+| 03-18 | ⏳ Upcoming    | -                   | -               |
 
 ---
 
