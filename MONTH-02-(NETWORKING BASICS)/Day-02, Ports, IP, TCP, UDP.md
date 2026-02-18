@@ -168,6 +168,6 @@ Because open and filtered ports both look like "silence", tools like `nmap` ofte
 
 <div align="center">
 
-**[⬅️ Day 1: All About IP Addresses](./Day-01,%20All%20about%20IP%20Addresses.md)**
+**[⬅️ Day 1: All About IP Addresses](./Day-01,%20All%20about%20IP%20Addresses.md) | [Day 3: OSI Model ➡️](./Day-03,%20OSI%20Model.md)**
 
 </div>
