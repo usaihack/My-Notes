@@ -104,6 +104,6 @@ To understand security, you must know what hits where.
 
 <div align="center">
 
-**[⬅️ Day 2: Ports, IP, TCP, UDP](./Day-02,%20Ports,%20IP,%20TCP,%20UDP.md)**
+**[⬅️ Day 2: Ports, IP, TCP, UDP](./Day-02,%20Ports,%20IP,%20TCP,%20UDP.md) | [Day 4: Subnetting and CIDR Notation ➡️](./Day-04,%20Subnetting%20and%20CIDR%20notation.md)**
 
 </div>
