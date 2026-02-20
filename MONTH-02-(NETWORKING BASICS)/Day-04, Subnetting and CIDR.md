@@ -98,6 +98,6 @@ For example, your ISP may assign you a Public IP + suffix combination, like `192
 
 <div align="center">
 
-**[⬅️ Day 3: OSI Model](./Day-03,%20OSI%20Model.md)**
+**[⬅️ Day 3: OSI Model](./Day-03,%20OSI%20Model.md) | [Day 5: Multi-Subnetting and Subnet Masks ➡️](./Day-05,%20Multi%20Subnetting%20and%20Subnet%20Masks.md)**
 
 </div>

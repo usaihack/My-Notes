@@ -106,6 +106,6 @@ Who controls the process?
 
 <div align="center">
 
-**[⬅️ Day 4: File Ownership](./Day-4,%20Ownerships.md)** • **[Day 6: Processes and Signals ➡️](./Day-6,%20Continue%20Processes,%20New%20Topic%20Signals.md)**
+**[⬅️ Day 4: File Ownership](./Day-4,%20Ownerships.md)** • **[Day 6: Processes and Signals ➡️](./Day-6,%20Signals.md)**
 
 </div>
