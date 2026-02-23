@@ -129,6 +129,6 @@ Find the Subnet Mask for `172.16.0.0/20`.
 
 <div align="center">
 
-**[⬅️ Day 4: Subnetting and CIDR](./Day-04,%20Subnetting%20and%20CIDR.md)**
+**[⬅️ Day 4: Subnetting and CIDR](./Day-04,%20Subnetting%20and%20CIDR.md)** | **[Day 6: ARP ➡️](./Day-06,%20ARP.md)**
 
 </div>
