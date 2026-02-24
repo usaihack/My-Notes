@@ -119,6 +119,6 @@ This constant switching of port mappings is called **MAC Flapping**.
 
 <div align="center">
 
-**[⬅️ Day 6: ARP](./Day-06,%20ARP.md)**
+**[⬅️ Day 6: ARP](./Day-06,%20ARP.md)** | **[Day 8: ARP Poisoning with arpspoof ➡️](./Day-08,%20ARP%20Poisoning%20with%20arpspoof.md)**
 
 </div>
