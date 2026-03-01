@@ -196,6 +196,6 @@ Future lookups are faster until TTL expires.
 
 <div align="center">
 
-**[⬅️ Day 8: ARP Poisoning with arpspoof](./Day-08,%20ARP%20Poisoning%20with%20arpspoof.md)**
+**[⬅️ Day 8: ARP Poisoning with arpspoof](./Day-08,%20ARP%20Poisoning%20with%20arpspoof.md)** | **[Day 10: DNS Record Types and DNS spoofing ➡️](./Day-10,%20DNS%20Record%20Types%20and%20DNS%20spoofing.md)**
 
 </div>
