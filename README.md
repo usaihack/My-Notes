@@ -150,7 +150,7 @@ By the end of this journey, the goal is to be prepared for:
 | Month | Status         | Topics Covered      | Completion      |
 | ----- | -------------- | ------------------- | --------------- |
 | 01    | ✅ Completed   | Linux understanding | ██████████ 100% |
-| 02    | 🔄 In Progress | Networking Basics   | ▌░░░░░░░░░ 5%   |
+| 02    | 🔄 In Progress | Networking Basics   | ███▌░░░░░░ 35%  |
 | 03-18 | ⏳ Upcoming    | -                   | -               |
 
 ---
@@ -175,6 +175,6 @@ Questions? Suggestions? Feel free to open an issue or reach out!
 
 **⭐ Star this repo if you find it helpful! ⭐**
 
-_Last Updated: February 2026_
+_Last Updated: 04 March 2026_
 
 </div>

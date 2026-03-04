@@ -304,6 +304,6 @@ DNS spoofing successful.
 
 <div align="center">
 
-**[⬅️ Day 9: DNS](./Day-09,%20DNS.md)**
+**[⬅️ Day 9: DNS](./Day-09,%20DNS.md)** | **[Day 11: DNS Cache Poisoning ➡️](./Day-11,%20DNS%20Cache%20Poisoning.md)**
 
 </div>
