@@ -109,6 +109,6 @@ HTTP is **stateless**. This means the server has a memory of exactly **0 seconds
 
 <div align="center">
 
-**[⬅️ Day 12: DNSSEC](./Day-12,%20DNSSEC.md) | [Day 14: HTTP Methods and Status Codes ➡️](./Day-14,%20HTTP%20Methods%20and%20Status%20Codes.md)**
+**[⬅️ Day 12: DNSSEC](./Day-12,%20DNSSEC.md) | [🏠 Home](../README.md) | [Day 14: HTTP Methods and Status Codes ➡️](./Day-14,%20HTTP%20Methods%20and%20Status%20Codes.md)**
 
 </div>

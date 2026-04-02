@@ -113,6 +113,6 @@ _You will capture its ARP request in Wireshark as it tries to resolve the gatewa
 
 <div align="center">
 
-**[⬅️ Day 5: Multi-Subnetting and Subnet Masks](./Day-05,%20Multi%20Subnetting%20and%20Subnet%20Masks.md)** | **[Day 7: ARP States ➡️](./Day-07,%20ARP%20States.md)**
+**[⬅️ Day 05: Multi-Subnetting and Subnet Masks](./Day-05,%20Multi%20Subnetting%20and%20Subnet%20Masks.md) | [🏠 Home](../README.md) | [Day 07: ARP States ➡️](./Day-07,%20ARP%20States.md)**
 
 </div>

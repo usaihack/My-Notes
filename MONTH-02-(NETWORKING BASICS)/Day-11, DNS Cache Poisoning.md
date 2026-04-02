@@ -59,6 +59,6 @@ It would now take weeks for even a supercomputer to guess the correct Port + ID 
 
 <div align="center">
 
-**[⬅️ Day 10: DNS Record Types and DNS spoofing](./Day-10,%20DNS%20Record%20Types%20and%20DNS%20spoofing.md)** | **[Day 12: DNSSEC ➡️](./Day-12,%20DNSSEC.md)**
+**[⬅️ Day-10: DNS Record Types and DNS spoofing](./Day-10,%20DNS%20Record%20Types%20and%20DNS%20spoofing.md) | [🏠 Home](../README.md) | [Day 12: DNSSEC ➡️](./Day-12,%20DNSSEC.md)**
 
 </div>

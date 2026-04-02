@@ -192,6 +192,6 @@ Modern networks are not built on trust anymore.
 
 <div align="center">
 
-**[⬅️ Day 7: ARP States](./Day-07,%20ARP%20States.md)** | **[Day 9: DNS ➡️](./Day-09,%20DNS.md)**
+**[⬅️ Day-07: ARP States](./Day-07,%20ARP%20States.md) | [🏠 Home](../README.md) | [Day-09: DNS ➡️](./Day-09,%20DNS.md)**
 
 </div>

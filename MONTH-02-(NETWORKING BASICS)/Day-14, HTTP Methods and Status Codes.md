@@ -108,6 +108,6 @@ These are 3-digit numbers the server sends back to tell you what happened. They 
 
 <div align="center">
 
-**[⬅️ Day 13: HTTP](./Day-13,%20HTTP.md)**
+**[⬅️ Day 13: HTTP](./Day-13,%20HTTP.md) | [🏠 Home](../README.md) | [Day 15: HTTP Headers - Part1 ➡️](./Day-15,%20HTTP%20Headers%20-%20Part1.md)**
 
 </div>
