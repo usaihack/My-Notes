@@ -1,18 +1,18 @@
 ---
-name: "💡 Topic / Resource Suggestion"
-about: "Suggest a topic, resource, or improvement"
+name: Topic / Resource Suggestion
+about: Suggest a topic, resource, or improvement
 title: "[SUGGESTION] "
 labels: ["enhancement"]
 assignees: []
 ---
 
-## 📋 Suggestion
+## Suggestion
 
 ### Type
-- [ ] 📝 New topic or concept to cover
-- [ ] 📚 Learning resource recommendation
-- [ ] 🔧 Improvement to existing notes
-- [ ] 🌍 Translation
+- [ ] New topic or concept to cover
+- [ ] Learning resource recommendation
+- [ ] Improvement to existing notes
+- [ ] Translation
 
 ### Details
 <!-- Describe your suggestion -->

@@ -47,17 +47,18 @@ Every note is written in my own words, from real hands-on practice. No copy-past
 
 ### Who is this for?
 
-| 🟢 Beginners | Starting from zero? Follow my path — every concept is explained like I'm explaining it to myself |
-|:---|:---|
-| 🔵 **CTF Players** | Solid fundamentals before you touch a box on HackTheBox or TryHackMe |
-| 🟡 **Students** | Tired of boring theory? This is hands-on, scenario-driven, security-first |
-| 🔴 **Career Switchers** | Real notes from a real journey — with the struggles and breakthroughs included |
+| Audience | Why this helps |
+|:---------|:---------------|
+| **Beginners** | Starting from zero? Follow my path — every concept is explained like I'm explaining it to myself |
+| **CTF Players** | Solid fundamentals before you touch a box on HackTheBox or TryHackMe |
+| **Students** | Tired of boring theory? This is hands-on, scenario-driven, security-first |
+| **Career Switchers** | Real notes from a real journey — with the struggles and breakthroughs included |
 
 ---
 
 ## `> cat /etc/roadmap`
 
-### 🗺️ The 18-Month Roadmap
+### The 18-Month Roadmap
 
 This journey covers **all major ethical hacking domains**, month by month:
 
@@ -85,10 +86,10 @@ This journey covers **all major ethical hacking domains**, month by month:
 
 ## `> ls -la /modules/`
 
-### 📡 Module Breakdown
+### Module Breakdown
 
 <details open>
-<summary><b>💀 MONTH 01 — FEEL KALI AS A HOME</b> &nbsp; <code>✅ COMPLETE</code> &nbsp; <img src="https://img.shields.io/badge/8_days-00ff41?style=flat-square&labelColor=0d1117" alt="8 days"/></summary>
+<summary><b>MONTH 01 — FEEL KALI AS A HOME</b> &nbsp; <code>COMPLETE</code> &nbsp; <img src="https://img.shields.io/badge/8_days-00ff41?style=flat-square&labelColor=0d1117" alt="8 days"/></summary>
 <br/>
 
 > *"Before hacking systems, live inside them."*
@@ -109,7 +110,7 @@ The foundation of everything. You can't hack what you don't understand.
 </details>
 
 <details open>
-<summary><b>🌐 MONTH 02 — NETWORKING BASICS</b> &nbsp; <code>🔄 IN PROGRESS</code> &nbsp; <img src="https://img.shields.io/badge/25_days-00d4aa?style=flat-square&labelColor=0d1117" alt="25 days"/></summary>
+<summary><b>MONTH 02 — NETWORKING BASICS</b> &nbsp; <code>IN PROGRESS</code> &nbsp; <img src="https://img.shields.io/badge/25_days-00d4aa?style=flat-square&labelColor=0d1117" alt="25 days"/></summary>
 <br/>
 
 > *"Packets are no longer invisible to me."*
@@ -147,27 +148,27 @@ Understanding the wire. Every attack travels through a network — learn how.
 </details>
 
 <details>
-<summary><b>⏳ MONTHS 03–18</b> &nbsp; <code>UPCOMING</code></summary>
+<summary><b>MONTHS 03–18</b> &nbsp; <code>UPCOMING</code></summary>
 <br/>
 
 | Month | Focus Area | Status |
 |:-----:|-----------|:------:|
-| 03 | Revision M1 & M2 + Deep Networking | ⏳ |
-| 04 | Web Application Security (OWASP Top 10) | ⏳ |
-| 05 | System Exploitation & Privilege Escalation | ⏳ |
-| 06 | Wireless Hacking & IoT Security | ⏳ |
-| 07 | Social Engineering & OSINT | ⏳ |
-| 08 | Malware Analysis & Reverse Engineering | ⏳ |
-| 09 | Active Directory Attacks | ⏳ |
-| 10 | Cloud Security (AWS/Azure/GCP) | ⏳ |
-| 11 | Red Teaming & APT Simulation | ⏳ |
-| 12 | Blue Team & Incident Response | ⏳ |
-| 13 | Advanced Pentesting Techniques | ⏳ |
-| 14 | Mobile & API Security | ⏳ |
-| 15 | Cryptography & Steganography | ⏳ |
-| 16 | Forensics & Evidence Collection | ⏳ |
-| 17 | Bug Bounty Methodology | ⏳ |
-| 18 | Final Review & Cert Preparation | ⏳ |
+| 03 | Revision M1 & M2 + Deep Networking | Upcoming |
+| 04 | Web Application Security (OWASP Top 10) | Upcoming |
+| 05 | System Exploitation & Privilege Escalation | Upcoming |
+| 06 | Wireless Hacking & IoT Security | Upcoming |
+| 07 | Social Engineering & OSINT | Upcoming |
+| 08 | Malware Analysis & Reverse Engineering | Upcoming |
+| 09 | Active Directory Attacks | Upcoming |
+| 10 | Cloud Security (AWS/Azure/GCP) | Upcoming |
+| 11 | Red Teaming & APT Simulation | Upcoming |
+| 12 | Blue Team & Incident Response | Upcoming |
+| 13 | Advanced Pentesting Techniques | Upcoming |
+| 14 | Mobile & API Security | Upcoming |
+| 15 | Cryptography & Steganography | Upcoming |
+| 16 | Forensics & Evidence Collection | Upcoming |
+| 17 | Bug Bounty Methodology | Upcoming |
+| 18 | Final Review & Cert Preparation | Upcoming |
 
 </details>
 
@@ -175,42 +176,61 @@ Understanding the wire. Every attack travels through a network — learn how.
 
 ## `> ./progress --stats`
 
-### 📊 Progress Tracker
+### Progress Tracker
 
 ```
 MISSION PROGRESS
 ══════════════════════════════════════════════════════════════
-  Month 01   Linux           ████████████████████  8/8  ✅
-  Month 02   Networking      █████████████████░░░  25/?  🔄
-  Month 03   Deep Networking  ░░░░░░░░░░░░░░░░░░░░  -    ⏳
-  Month 04+  Coming soon...   ░░░░░░░░░░░░░░░░░░░░  -    ⏳
+  Month 01   Linux           ████████████████████  8/8   DONE
+  Month 02   Networking      █████████████████░░░  25/?  ACTIVE
+  Month 03   Deep Networking  ░░░░░░░░░░░░░░░░░░░░  -     --
+  Month 04+  Coming soon...   ░░░░░░░░░░░░░░░░░░░░  -     --
 ══════════════════════════════════════════════════════════════
   TOTAL NOTES WRITTEN:  33+
   DAYS LOGGED:          33+
   PROTOCOLS STUDIED:    IP, TCP, UDP, ARP, DNS, HTTP, SMB, SMTP
-  STATUS:               ACTIVE 🟢
+  STATUS:               ACTIVE
 ```
+
+---
+
+## `> git log --graph --oneline`
+
+### Contribution Activity
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=usaihack&repo=My-Notes&theme=github-dark&area=true&hide_border=true&custom_title=Commit%20Activity&line=00ff41&point=00ff41&area_color=00ff4120&bg_color=0d1117&color=8b949e" alt="Contribution Graph" width="100%"/>
+</p>
+
+### Contributors
+
+<p align="center">
+  <a href="https://github.com/usaihack/My-Notes/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=usaihack/My-Notes&columns=12" alt="Contributors"/>
+  </a>
+</p>
+
+<p align="center">
+  <sub>Auto-updated — every new contributor appears here automatically.</sub>
+</p>
 
 ---
 
 ## `> cat /proc/self/maps`
 
-### 🗂️ Repository Structure
+### Repository Structure
 
+> This tree is **auto-generated** on every push via [GitHub Actions](.github/workflows/update-readme.yml). It always reflects the current state of the repo.
+
+<!-- DIRECTORY_TREE_START -->
 ```
 My-Notes/
-│
-├── 📄 README.md                    ← You are here
-├── 📄 LICENSE                      ← MIT License
-├── 📄 CONTRIBUTING.md              ← Contribution guidelines
-├── 📄 CODE_OF_CONDUCT.md           ← Community standards
-├── 📄 SECURITY.md                  ← Responsible use & reporting
-├── 📄 SETUP.md                     ← Obsidian + MEGA sync guide
-├── 📄 .gitignore                   ← Git ignore rules
-│
-├── 📁 MONTH-01-(FEEL KALI AS A HOME)/
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── MONTH-01-(FEEL KALI AS A HOME)/
 │   ├── Day-1, Directories.md
-│   ├── Day-2, Shortcuts and Basic Commands.md
+│   ├── Day-2 Shortcuts and Basic Commands.md
 │   ├── Day-3, Permissions.md
 │   ├── Day-4, Ownerships.md
 │   ├── Day-5, Processes.md
@@ -218,26 +238,45 @@ My-Notes/
 │   ├── Day-07, STATES of Processes.md
 │   ├── Day-08, SERVICES.md
 │   └── QUOTE for month-1.md
-│
-├── 📁 MONTH-02-(NETWORKING BASICS)/
-│   ├── Day-01 through Day-25 ...
+├── MONTH-02-(NETWORKING BASICS)/
+│   ├── Day-01, All about IP Addresses.md
+│   ├── Day-02, Ports, IP, TCP, UDP.md
+│   ├── Day-03, OSI Model.md
+│   ├── Day-04, Subnetting and CIDR.md
+│   ├── Day-05, Multi Subnetting and Subnet Masks.md
+│   ├── Day-06, ARP.md
+│   ├── Day-07, ARP States.md
+│   ├── Day-08, ARP Poisoning with arpspoof.md
+│   ├── Day-09, DNS.md
+│   ├── Day-10, DNS Record Types and DNS spoofing.md
+│   ├── Day-11, DNS Cache Poisoning.md
+│   ├── Day-12, DNSSEC.md
+│   ├── Day-13, HTTP.md
+│   ├── Day-14, HTTP Methods and Status Codes.md
+│   ├── Day-15, HTTP Headers - Part1.md
+│   ├── Day-16, HTTP Headers - Part2.md
+│   ├── Day-17, HTTP Cookies and Sessions.md
+│   ├── Day-18, HTTP Authentication and Advance HTTP Concepts.md
+│   ├── Day-19, HTTP2 and HTTP3 Advance Concepts.md
+│   ├── Day-20, SMB.md
+│   ├── Day-21, SMB Enumeration (26,27-March-2026).md
+│   ├── Day-22, continue SMB Enumeration.md
+│   ├── Day-23, SMTP.md
+│   ├── Day-24, SMTP Security.md
+│   ├── Day-25, ...continue SMTP.md
 │   └── QUOTES for Month-02.md
-│
-├── 📁 assets/                      ← Repo assets
-│   └── banner.svg
-│
-└── 📁 .github/                     ← GitHub templates
-    ├── ISSUE_TEMPLATE/
-    │   ├── bug_report.md
-    │   └── topic_request.md
-    └── PULL_REQUEST_TEMPLATE.md
+├── README.md
+├── SECURITY.md
+├── SETUP.md
+└── linux_cybersecurity_assignments.md
 ```
+<!-- DIRECTORY_TREE_END -->
 
 ---
 
 ## `> systemctl start learning.service`
 
-### 🚀 Getting Started
+### Getting Started
 
 **Option 1: Read on GitHub** — Just browse the folders above. Every note is GitHub-rendered markdown.
 
@@ -264,7 +303,7 @@ For full setup including mobile sync, see [**SETUP.md**](SETUP.md).
 
 ## `> cat /dev/philosophy`
 
-### 🧠 How These Notes Are Different
+### How These Notes Are Different
 
 ```
  ┌─ NOT this ──────────────────────┐    ┌─ THIS ─────────────────────────┐
@@ -279,15 +318,15 @@ For full setup including mobile sync, see [**SETUP.md**](SETUP.md).
 ```
 
 Every topic is viewed through the lens of:
-- 🔴 **How would an attacker abuse this?**
-- 🔵 **How would a defender detect this?**
-- 🟢 **What do I need to remember under pressure?**
+- **How would an attacker abuse this?**
+- **How would a defender detect this?**
+- **What do I need to remember under pressure?**
 
 ---
 
 ## `> cat /etc/certs_target`
 
-### 🎓 Certification Targets
+### Certification Targets
 
 By the end of this 18-month journey, the goal is to be prepared for:
 
@@ -302,9 +341,9 @@ By the end of this 18-month journey, the goal is to be prepared for:
 
 ## `> grep -r "contribute" ./CONTRIBUTING.md`
 
-### 🤝 Contributing
+### Contributing
 
-Contributions are welcome! Whether it's fixing a typo, improving an explanation, or suggesting a new topic:
+Contributions are welcome — whether it's fixing a typo, improving an explanation, or suggesting a new topic:
 
 1. Read the [**Contributing Guide**](CONTRIBUTING.md)
 2. Follow the [**Code of Conduct**](CODE_OF_CONDUCT.md)
@@ -314,13 +353,13 @@ Contributions are welcome! Whether it's fixing a typo, improving an explanation,
 
 ## `> cat /var/log/legal`
 
-### ⚖️ Legal Disclaimer
+### Legal Disclaimer
 
 > **All techniques documented in this repository are for educational purposes only.**
 >
-> - ✅ Practice only on systems you **own** or have **explicit written authorization** to test
-> - ❌ Unauthorized access to computer systems is **illegal** under CFAA, PECA, and other laws
-> - 🎓 This repository promotes **ethical hacking** and **responsible disclosure**
+> - Practice only on systems you **own** or have **explicit written authorization** to test
+> - Unauthorized access to computer systems is **illegal** under CFAA, PECA, and other laws
+> - This repository promotes **ethical hacking** and **responsible disclosure**
 >
 > **The author does not condone or support any illegal activities.**
 
@@ -328,18 +367,18 @@ Contributions are welcome! Whether it's fixing a typo, improving an explanation,
 
 ## `> tail -1 /etc/license`
 
-### 📜 License
+### License
 
 This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
 
 ---
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1000&color=00FF41&center=true&vCenter=true&random=false&width=500&lines=%24+echo+%22Stay+curious.+Stay+ethical.%22;%24+echo+%22Happy+Hacking!+%F0%9F%94%90%22;Connection+closed+by+remote+host." alt="Footer" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&pause=1000&color=00FF41&center=true&vCenter=true&random=false&width=500&lines=%24+echo+%22Stay+curious.+Stay+ethical.%22;%24+echo+%22Happy+Hacking%22;Connection+closed+by+remote+host." alt="Footer" />
 </p>
 
 <p align="center">
-  <sub>If this repo helps you, drop a ⭐ — it costs you nothing but means everything.</sub>
+  <sub>If this repo helps you, consider starring it.</sub>
   <br/>
   <sub><b>Last Updated:</b> August 2026</sub>
 </p>

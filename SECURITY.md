@@ -4,7 +4,7 @@
 usaihack@kali:~$ cat /etc/security/policy
 ```
 
-## 🛡️ Reporting a Vulnerability
+## Reporting a Vulnerability
 
 If you discover a security issue within any note or assignment (e.g., a command that could cause unintended system damage, or a technique that lacks proper safety warnings), please report it responsibly.
 
@@ -28,30 +28,30 @@ If you discover a security issue within any note or assignment (e.g., a command 
 
 ---
 
-## ⚠️ Responsible Use Policy
+## Responsible Use Policy
 
 This repository contains **offensive security techniques** for **educational purposes only**.
 
 ### You MUST:
 
-- ✅ Only practice on systems you **own** or have **explicit written authorization** to test
-- ✅ Use a local VM or lab environment (Kali Linux, VirtualBox, etc.)
-- ✅ Follow all applicable local and international laws
+- Only practice on systems you **own** or have **explicit written authorization** to test
+- Use a local VM or lab environment (Kali Linux, VirtualBox, etc.)
+- Follow all applicable local and international laws
 
 ### You MUST NOT:
 
-- ❌ Use these techniques against systems without authorization
-- ❌ Use this material to cause harm, disruption, or unauthorized access
-- ❌ Redistribute modified versions that remove safety warnings or disclaimers
+- Use these techniques against systems without authorization
+- Use this material to cause harm, disruption, or unauthorized access
+- Redistribute modified versions that remove safety warnings or disclaimers
 
 ### Applicable Laws
 
 Unauthorized access to computer systems is a criminal offense:
 
-- 🇺🇸 **USA**: Computer Fraud and Abuse Act (CFAA)
-- 🇬🇧 **UK**: Computer Misuse Act 1990
-- 🇪🇺 **EU**: Directive 2013/40/EU
-- 🇵🇰 **Pakistan**: Prevention of Electronic Crimes Act (PECA) 2016
+- **USA** — Computer Fraud and Abuse Act (CFAA)
+- **UK** — Computer Misuse Act 1990
+- **EU** — Directive 2013/40/EU
+- **Pakistan** — Prevention of Electronic Crimes Act (PECA) 2016
 
 The author accepts **no responsibility** for any illegal or unauthorized use of the techniques described.
 

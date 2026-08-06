@@ -4,7 +4,7 @@ This guide will help you set up the optimal environment for viewing and synchron
 
 ---
 
-## 📝 Prerequisites
+## Prerequisites
 
 - Windows, macOS, or Linux operating system
 - Git installed (for cloning the repository)
@@ -12,7 +12,7 @@ This guide will help you set up the optimal environment for viewing and synchron
 
 ---
 
-## 🔧 Local Setup
+## Local Setup
 
 ### Step 1: Clone the Repository
 
@@ -54,21 +54,21 @@ Obsidian provides the best viewing experience for these markdown notes with feat
 3. Navigate to your cloned `My-Notes` directory
 4. Select the folder and click **"Open"**
 
-✅ Your notes are now ready to explore in Obsidian!
+Your notes are now ready to explore in Obsidian.
 
 ---
 
-## 📱 Mobile & Desktop Synchronization
+## Mobile & Desktop Synchronization
 
 For seamless two-way sync across all your devices, use MEGA Cloud Storage.
 
 ### Why MEGA?
 
-- ✅ **Free 20GB** storage
-- ✅ **End-to-end encryption** for security
-- ✅ **Two-way sync** - Changes sync automatically
-- ✅ **Cross-platform** - Windows, macOS, Linux, iOS, Android
-- ✅ **Privacy-focused** - Zero-knowledge encryption
+- **Free 20GB** storage
+- **End-to-end encryption** for security
+- **Two-way sync** — Changes sync automatically
+- **Cross-platform** — Windows, macOS, Linux, iOS, Android
+- **Privacy-focused** — Zero-knowledge encryption
 
 ### Step 1: Create MEGA Account
 
@@ -95,7 +95,7 @@ For seamless two-way sync across all your devices, use MEGA Cloud Storage.
 5. **MEGA folder:** Create/select `EthicalHackingNotes` folder
 6. Click **"Add"**
 
-✅ Your notes will now sync to MEGA Cloud!
+Your notes will now sync to MEGA Cloud.
 
 ### Step 3: Install MEGA Mobile App
 
@@ -139,7 +139,7 @@ For seamless two-way sync across all your devices, use MEGA Cloud Storage.
 
 ---
 
-## 🔄 Workflow: How It All Works Together
+## Workflow: How It All Works Together
 
 ```
 ┌─────────────────┐
@@ -166,19 +166,19 @@ For seamless two-way sync across all your devices, use MEGA Cloud Storage.
 2. MEGA syncs to cloud automatically
 3. Mobile MEGA downloads changes
 4. View updated notes in Obsidian Mobile
-5. Reverse works the same way!
+5. Reverse works the same way
 
 ---
 
-## ⚙️ Recommended Obsidian Settings
+## Recommended Obsidian Settings
 
 ### Essential Community Plugins
 
-1. **Dataview** - Query and display notes dynamically
-2. **Calendar** - Visualize daily notes
-3. **Kanban** - Organize learning tasks
-4. **Advanced Tables** - Better table editing
-5. **Tag Wrangler** - Manage tags efficiently
+1. **Dataview** — Query and display notes dynamically
+2. **Calendar** — Visualize daily notes
+3. **Kanban** — Organize learning tasks
+4. **Advanced Tables** — Better table editing
+5. **Tag Wrangler** — Manage tags efficiently
 
 ### Installation
 
@@ -195,7 +195,7 @@ For seamless two-way sync across all your devices, use MEGA Cloud Storage.
 
 ---
 
-## 🛡️ Security Considerations
+## Security Considerations
 
 ### MEGA Encryption
 
@@ -214,7 +214,7 @@ While MEGA provides redundancy, consider:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Sync Issues
 
@@ -251,7 +251,7 @@ While MEGA provides redundancy, consider:
 
 ---
 
-## 📞 Getting Help
+## Getting Help
 
 If you encounter issues:
 
@@ -268,7 +268,7 @@ If you encounter issues:
 
 ---
 
-## ✅ Setup Checklist
+## Setup Checklist
 
 - [ ] Git installed and repository cloned
 - [ ] Obsidian installed and vault opened
@@ -281,4 +281,4 @@ If you encounter issues:
 
 ---
 
-**You're all set! Happy learning! 🚀**
+**You're all set. Happy learning.**

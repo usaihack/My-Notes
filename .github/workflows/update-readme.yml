@@ -1,0 +1,108 @@
+name: Update README Dynamic Sections
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate directory tree
+        run: |
+          # Generate the directory tree, excluding hidden dirs, assets, and .github internals
+          generate_tree() {
+            local dir="$1"
+            local prefix="$2"
+            local entries=()
+
+            # Read entries, skip hidden files/dirs
+            while IFS= read -r entry; do
+              local name=$(basename "$entry")
+              [[ "$name" == .* ]] && continue
+              [[ "$name" == "assets" ]] && continue
+              [[ "$name" == "node_modules" ]] && continue
+              entries+=("$entry")
+            done < <(find "$dir" -maxdepth 1 -mindepth 1 | sort)
+
+            local count=${#entries[@]}
+            local i=0
+
+            for entry in "${entries[@]}"; do
+              i=$((i + 1))
+              local name=$(basename "$entry")
+              local connector="├──"
+              local next_prefix="${prefix}│   "
+
+              if [ $i -eq $count ]; then
+                connector="└──"
+                next_prefix="${prefix}    "
+              fi
+
+              if [ -d "$entry" ]; then
+                echo "${prefix}${connector} ${name}/"
+                generate_tree "$entry" "$next_prefix"
+              else
+                echo "${prefix}${connector} ${name}"
+              fi
+            done
+          }
+
+          {
+            echo "My-Notes/"
+            generate_tree "." ""
+          } > /tmp/tree_output.txt
+
+          echo "Generated tree:"
+          cat /tmp/tree_output.txt
+
+      - name: Update README with directory tree
+        run: |
+          # Read the generated tree
+          TREE_CONTENT=$(cat /tmp/tree_output.txt)
+
+          # Create the replacement block
+          {
+            echo '<!-- DIRECTORY_TREE_START -->'
+            echo '```'
+            echo "$TREE_CONTENT"
+            echo '```'
+            echo '<!-- DIRECTORY_TREE_END -->'
+          } > /tmp/tree_block.txt
+
+          # Replace content between markers in README
+          python3 << 'PYTHON_SCRIPT'
+          import re
+
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          with open('/tmp/tree_block.txt', 'r') as f:
+              replacement = f.read()
+
+          pattern = r'<!-- DIRECTORY_TREE_START -->.*?<!-- DIRECTORY_TREE_END -->'
+          new_content = re.sub(pattern, replacement.strip(), content, flags=re.DOTALL)
+
+          with open('README.md', 'w') as f:
+              f.write(new_content)
+
+          print("README updated successfully.")
+          PYTHON_SCRIPT
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          # Only commit if there are changes
+          git diff --staged --quiet || git commit -m "docs: auto-update directory tree"
+          git push
