@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <code>usaihack@kali:~$</code> <strong>An 18-month open-source ethical hacking journey — notes, assignments, and hands-on labs.</strong>
+  <code>usman@usaihack:~$</code> <strong>My 18-month open-source ethical hacking journey — notes, assignments, and hands-on labs.</strong>
 </p>
 
 <br/>
