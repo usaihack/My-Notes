@@ -225,18 +225,30 @@ MISSION PROGRESS
 <!-- DIRECTORY_TREE_START -->
 ```
 My-Notes/
+├── ASSIGNMENTS/
+│   └── LINUX-ASSIGNMENTS/
+│       ├── LEVEL-1, Basics (Basic Recall & Muscle Memory)/
+│       │   ├── Assignment 1.1 — Map the Battlefield.md
+│       │   ├── Assignment 1.2 - File Operations Under Pressure.md
+│       │   ├── Assignment 1.3 — Permission Decoder Ring.md
+│       │   ├── Assignment 1.4 — Process Snapshot.md
+│       │   ├── Assignment 1.5 — Signal Flashcards.md
+│       │   └── Assignment 1.6 — Service Roll Call.md
+│       └── LEVEL-2, Intermediate (Applied Skills - Realistic Scenarios)/
+│           ├── Assignment 2.1 — The Intruder's Footprint.md
+│           └── Assignment 2.2 — Ownership Lockdown.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
 ├── MONTH-01-(FEEL KALI AS A HOME)/
+│   ├── Day-07, STATES of Processes.md
+│   ├── Day-08, SERVICES.md
 │   ├── Day-1, Directories.md
 │   ├── Day-2 Shortcuts and Basic Commands.md
 │   ├── Day-3, Permissions.md
 │   ├── Day-4, Ownerships.md
 │   ├── Day-5, Processes.md
 │   ├── Day-6, Signals.md
-│   ├── Day-07, STATES of Processes.md
-│   ├── Day-08, SERVICES.md
 │   └── QUOTE for month-1.md
 ├── MONTH-02-(NETWORKING BASICS)/
 │   ├── Day-01, All about IP Addresses.md
@@ -267,8 +279,7 @@ My-Notes/
 │   └── QUOTES for Month-02.md
 ├── README.md
 ├── SECURITY.md
-├── SETUP.md
-└── linux_cybersecurity_assignments.md
+└── SETUP.md
 ```
 <!-- DIRECTORY_TREE_END -->
 
