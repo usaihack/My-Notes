@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06080d;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#0a0f1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#060b14;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff41" />
+      <stop offset="40%" style="stop-color:#00e639" />
+      <stop offset="70%" style="stop-color:#00d4aa" />
+      <stop offset="100%" style="stop-color:#00ff41" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:0" />
+      <stop offset="15%" style="stop-color:#00ff41;stop-opacity:0.5" />
+      <stop offset="85%" style="stop-color:#00ff41;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#00ff41;stop-opacity:0" />
+    </linearGradient>
+    <linearGradient id="subtitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6e7681" />
+      <stop offset="50%" style="stop-color:#8b949e" />
+      <stop offset="100%" style="stop-color:#6e7681" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="1.2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bgGrad)" rx="10"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.03" stroke="#00ff41" stroke-width="0.5">
+    <line x1="50" y1="0" x2="50" y2="320"/><line x1="100" y1="0" x2="100" y2="320"/>
+    <line x1="150" y1="0" x2="150" y2="320"/><line x1="200" y1="0" x2="200" y2="320"/>
+    <line x1="250" y1="0" x2="250" y2="320"/><line x1="300" y1="0" x2="300" y2="320"/>
+    <line x1="350" y1="0" x2="350" y2="320"/><line x1="400" y1="0" x2="400" y2="320"/>
+    <line x1="450" y1="0" x2="450" y2="320"/><line x1="500" y1="0" x2="500" y2="320"/>
+    <line x1="550" y1="0" x2="550" y2="320"/><line x1="600" y1="0" x2="600" y2="320"/>
+    <line x1="650" y1="0" x2="650" y2="320"/><line x1="700" y1="0" x2="700" y2="320"/>
+    <line x1="750" y1="0" x2="750" y2="320"/><line x1="800" y1="0" x2="800" y2="320"/>
+    <line x1="850" y1="0" x2="850" y2="320"/><line x1="900" y1="0" x2="900" y2="320"/>
+    <line x1="950" y1="0" x2="950" y2="320"/><line x1="1000" y1="0" x2="1000" y2="320"/>
+    <line x1="1050" y1="0" x2="1050" y2="320"/><line x1="1100" y1="0" x2="1100" y2="320"/>
+    <line x1="1150" y1="0" x2="1150" y2="320"/>
+    <line x1="0" y1="50" x2="1200" y2="50"/><line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/><line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- Floating code fragments - left side -->
+  <text x="25" y="35" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.08">cat /etc/shadow | head -5</text>
+  <text x="25" y="50" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.06">nmap -sV -sC -p- 10.10.10.1</text>
+  <text x="25" y="65" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.10">chmod 700 ~/.ssh/authorized_keys</text>
+  <text x="25" y="265" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.07">systemctl status suspicious.service</text>
+  <text x="25" y="280" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.09">ps aux | grep -v grep | grep root</text>
+  <text x="25" y="295" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.06">find / -perm -4000 -type f 2>/dev/null</text>
+
+  <!-- Floating code fragments - right side -->
+  <text x="870" y="35" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.08">arp -a | grep gateway</text>
+  <text x="870" y="50" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.06">dig AXFR @ns1.target.com target.com</text>
+  <text x="870" y="65" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.10">tcpdump -i eth0 -w capture.pcap</text>
+  <text x="870" y="265" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.07">ssh -L 8080:localhost:80 user@target</text>
+  <text x="870" y="280" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.09">grep "Failed password" /var/log/auth.log</text>
+  <text x="870" y="295" font-family="'Courier New',monospace" font-size="9" fill="#00ff41" opacity="0.06">curl -sI https://target.com | head</text>
+
+  <!-- Terminal prompt -->
+  <text x="345" y="100" font-family="'Courier New',monospace" font-size="15" fill="#00ff41" opacity="0.45" filter="url(#softGlow)">usaihack@kali:~$</text>
+
+  <!-- Main title -->
+  <text x="600" y="155" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="56" font-weight="bold" fill="url(#titleGrad)" text-anchor="middle" filter="url(#glow)" letter-spacing="4">MY NOTES</text>
+
+  <!-- Separator -->
+  <rect x="250" y="175" width="700" height="1.5" fill="url(#lineGrad)" rx="1"/>
+
+  <!-- Subtitle -->
+  <text x="600" y="205" font-family="'Courier New',monospace" font-size="14" fill="url(#subtitleGrad)" text-anchor="middle">18-month ethical hacking journey — from zero to certified</text>
+
+  <!-- Tags row -->
+  <g transform="translate(235, 228)">
+    <rect x="0" y="0" width="90" height="22" rx="11" fill="#00ff41" opacity="0.08" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.25"/>
+    <text x="45" y="15" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" text-anchor="middle">linux</text>
+  </g>
+  <g transform="translate(340, 228)">
+    <rect x="0" y="0" width="110" height="22" rx="11" fill="#00ff41" opacity="0.08" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.25"/>
+    <text x="55" y="15" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" text-anchor="middle">networking</text>
+  </g>
+  <g transform="translate(465, 228)">
+    <rect x="0" y="0" width="110" height="22" rx="11" fill="#00ff41" opacity="0.08" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.25"/>
+    <text x="55" y="15" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" text-anchor="middle">cybersecurity</text>
+  </g>
+  <g transform="translate(590, 228)">
+    <rect x="0" y="0" width="110" height="22" rx="11" fill="#00ff41" opacity="0.08" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.25"/>
+    <text x="55" y="15" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" text-anchor="middle">assignments</text>
+  </g>
+  <g transform="translate(715, 228)">
+    <rect x="0" y="0" width="115" height="22" rx="11" fill="#00ff41" opacity="0.08" stroke="#00ff41" stroke-width="0.5" stroke-opacity="0.25"/>
+    <text x="57" y="15" font-family="'Courier New',monospace" font-size="10" fill="#00ff41" text-anchor="middle">open source</text>
+  </g>
+
+  <!-- Corner brackets -->
+  <polyline points="12,22 12,12 22,12" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.3"/>
+  <polyline points="1178,22 1178,12 1188,12" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.3"/>
+  <polyline points="12,298 12,308 22,308" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.3"/>
+  <polyline points="1178,298 1178,308 1188,308" fill="none" stroke="#00ff41" stroke-width="1.5" opacity="0.3"/>
+</svg>

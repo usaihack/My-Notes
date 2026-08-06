@@ -1,41 +1,53 @@
-# Obsidian
-.obsidian/
+# ========================================
+# My-Notes — .gitignore
+# ========================================
 
-# Obsidian Trash
+# ----- Obsidian -----
+.obsidian/
 .trash/
 
-# System Files
+# ----- OS Generated -----
 .DS_Store
 Thumbs.db
 Desktop.ini
+ehthumbs.db
+._*
+.Spotlight-V100
+.Trashes
+
+# ----- Editors / IDEs -----
+.vscode/
+.idea/
 *.swp
 *.swo
 *~
+*.sublime-*
 
-# Temporary Files
+# ----- MEGA Sync -----
+.megaignore
+*.mega
+
+# ----- Temporary / Backup -----
 *.tmp
 *.temp
 *.bak
 *.backup
-
-# Editor Specific
-.vscode/
-.idea/
-*.sublime-*
-
-# MEGA Sync
-.megaignore
-*.mega
-
-# Personal Notes (if you want to keep some notes private)
-# private/
-# personal/
-
-# Log Files
 *.log
 
-# Archives
+# ----- Archives -----
 *.zip
 *.rar
 *.7z
 *.tar.gz
+
+# ----- Student Solution Files -----
+# Keep solution files private
+solutions/
+**/my_solution*
+**/my_answer*
+**/*_solution.txt
+
+# ----- Private / Personal -----
+# Uncomment if you want to keep some notes private
+# private/
+# personal/
