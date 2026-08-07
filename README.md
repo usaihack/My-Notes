@@ -279,10 +279,7 @@ My-Notes/
 │   └── QUOTES for Month-02.md
 ├── README.md
 ├── SECURITY.md
-├── SETUP.md
-├── test.txt
-├── test2.txt
-└── test3.txt
+└── SETUP.md
 ```
 <!-- DIRECTORY_TREE_END -->
 
