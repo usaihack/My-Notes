@@ -321,7 +321,7 @@ For full setup including mobile sync, see [**SETUP.md**](SETUP.md).
 ### How These Notes Are Different
 
 ```
- ┌─ NOT this ──────────────────────┐    ┌─ THIS ─────────────────────────┐
+ ┌─ NOT this ───────────────────────┐    ┌─ THIS ─────────────────────────┐
  │                                  │    │                                │
  │  • Copy-pasted from textbooks    │    │  • Written in my own words     │
  │  • Dry, boring theory            │    │  • Real scenarios & analogies  │
