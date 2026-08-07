@@ -236,7 +236,11 @@ My-Notes/
 │       │   └── Assignment 1.6 — Service Roll Call.md
 │       └── LEVEL-2, Intermediate (Applied Skills - Realistic Scenarios)/
 │           ├── Assignment 2.1 — The Intruder's Footprint.md
-│           └── Assignment 2.2 — Ownership Lockdown.md
+│           ├── Assignment 2.2 — Ownership Lockdown.md
+│           ├── Assignment 2.3 — Process Hunting.md
+│           ├── Assignment 2.4 — Service Forensics.md
+│           ├── Assignment 2.5 — Pipe Mastery.md
+│           └── Assignment 2.6 — The Permission Maze.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
