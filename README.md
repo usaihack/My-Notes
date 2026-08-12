@@ -234,13 +234,19 @@ My-Notes/
 │       │   ├── Assignment 1.4 — Process Snapshot.md
 │       │   ├── Assignment 1.5 — Signal Flashcards.md
 │       │   └── Assignment 1.6 — Service Roll Call.md
-│       └── LEVEL-2, Intermediate (Applied Skills - Realistic Scenarios)/
-│           ├── Assignment 2.1 — The Intruder's Footprint.md
-│           ├── Assignment 2.2 — Ownership Lockdown.md
-│           ├── Assignment 2.3 — Process Hunting.md
-│           ├── Assignment 2.4 — Service Forensics.md
-│           ├── Assignment 2.5 — Pipe Mastery.md
-│           └── Assignment 2.6 — The Permission Maze.md
+│       ├── LEVEL-2, Intermediate (Applied Skills - Realistic Scenarios)/
+│       │   ├── Assignment 2.1 — The Intruder's Footprint.md
+│       │   ├── Assignment 2.2 — Ownership Lockdown.md
+│       │   ├── Assignment 2.3 — Process Hunting.md
+│       │   ├── Assignment 2.4 — Service Forensics.md
+│       │   ├── Assignment 2.5 — Pipe Mastery.md
+│       │   └── Assignment 2.6 — The Permission Maze.md
+│       └── LEVEL-3, ANALYST (Read Systems Like a Security Expert)/
+│           ├── Assignment 3.1 — Audit etc passwd directory.md
+│           ├── Assignment 3.2 — Process State Forensics.md
+│           ├── Assignment 3.3 — The Suspicious Service Investigation.md
+│           ├── Assignment 3.4 — Log Analysis Basics.md
+│           └── Assignment 3.5 — Permission Vulnerability Scan.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
