@@ -247,12 +247,17 @@ My-Notes/
 │       │   ├── Assignment 3.3 — The Suspicious Service Investigation.md
 │       │   ├── Assignment 3.4 — Log Analysis Basics.md
 │       │   └── Assignment 3.5 — Permission Vulnerability Scan.md
-│       └── LEVEL-4, RED TEAM (Think Like an Attacker)/
-│           ├── Assignment 4.1 — Persistence via Services.md
-│           ├── Assignment 4.2 — Privilege Escalation via Permissions.md
-│           ├── Assignment 4.3 — Process Injection Simulation.md
-│           ├── Assignment 4.4 — Data Exfiltration via tmp directory.md
-│           └── Assignment 4.5 — The Kill Chain Exercise.md
+│       ├── LEVEL-4, RED TEAM (Think Like an Attacker)/
+│       │   ├── Assignment 4.1 — Persistence via Services.md
+│       │   ├── Assignment 4.2 — Privilege Escalation via Permissions.md
+│       │   ├── Assignment 4.3 — Process Injection Simulation.md
+│       │   ├── Assignment 4.4 — Data Exfiltration via tmp directory.md
+│       │   └── Assignment 4.5 — The Kill Chain Exercise.md
+│       └── LEVEL-5 - Final - ARCHITECT (Defend & Harden)/
+│           ├── Assignment 5.1 — System Hardening Checklist.md
+│           ├── Assignment 5.2 — Build a Security Monitoring Script.md
+│           ├── Assignment 5.3 — Incident Response Drill.md
+│           └── Assignment 5.4 — The Final Boss - Full System Audit.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
