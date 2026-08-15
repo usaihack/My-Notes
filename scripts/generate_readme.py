@@ -14,8 +14,9 @@ What it does, every time it runs (triggered by GitHub Actions on push):
      everything else (About, Getting Started, Legal, etc.) untouched.
   5. Writes README.md back to disk only if something actually changed.
 
-Requires: ANTHROPIC_API_KEY in the environment (set as a repo secret).
-No other manual steps are needed once this is wired into the workflow.
+Uses GEMINI_API_KEY if available (set as a repo secret) to generate summaries.
+If the key is missing, cached summaries are reused and new summaries fall back
+to a generic placeholder so README generation still succeeds.
 """
 
 import hashlib
@@ -42,7 +43,8 @@ MARKERS = {
     "tree": ("<!-- DIRECTORY_TREE_START -->", "<!-- DIRECTORY_TREE_END -->"),
 }
 
-client = genai.Client()  # picks up GEMINI_API_KEY from env
+client = None
+missing_api_key_warned = False
 
 
 def load_config():
@@ -66,6 +68,19 @@ def file_hash(text: str) -> str:
 
 def summarize_day(title: str, content: str) -> str:
     """Ask Gemini for a short, consistent 'what you'll learn' line."""
+    global client, missing_api_key_warned
+    if client is None:
+        api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            if not missing_api_key_warned:
+                print(
+                    "WARNING: GEMINI_API_KEY is not set; using fallback summaries.",
+                    file=sys.stderr,
+                )
+                missing_api_key_warned = True
+            return "Notes on this topic"
+        client = genai.Client(api_key=api_key)
+
     prompt = f"""You are writing one line for a study-log README table.
 
 File title: {title}
