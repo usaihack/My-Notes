@@ -83,7 +83,83 @@ Full assignment set: [`ASSIGNMENTS/LINUX-ASSIGNMENTS/`](ASSIGNMENTS/LINUX-ASSIGN
 
 <!-- DIRECTORY_TREE_START -->
 ```
-(regenerated automatically on first workflow run)
+My-Notes/
+├── ASSIGNMENTS/
+│   └── LINUX-ASSIGNMENTS/
+│       ├── LEVEL-1, Basics (Basic Recall & Muscle Memory)/
+│       │   ├── Assignment 1.1 — Map the Battlefield.md
+│       │   ├── Assignment 1.2 - File Operations Under Pressure.md
+│       │   ├── Assignment 1.3 — Permission Decoder Ring.md
+│       │   ├── Assignment 1.4 — Process Snapshot.md
+│       │   ├── Assignment 1.5 — Signal Flashcards.md
+│       │   └── Assignment 1.6 — Service Roll Call.md
+│       ├── LEVEL-2, Intermediate (Applied Skills - Realistic Scenarios)/
+│       │   ├── Assignment 2.1 — The Intruder's Footprint.md
+│       │   ├── Assignment 2.2 — Ownership Lockdown.md
+│       │   ├── Assignment 2.3 — Process Hunting.md
+│       │   ├── Assignment 2.4 — Service Forensics.md
+│       │   ├── Assignment 2.5 — Pipe Mastery.md
+│       │   └── Assignment 2.6 — The Permission Maze.md
+│       ├── LEVEL-3, ANALYST (Read Systems Like a Security Expert)/
+│       │   ├── Assignment 3.1 — Audit etc passwd directory.md
+│       │   ├── Assignment 3.2 — Process State Forensics.md
+│       │   ├── Assignment 3.3 — The Suspicious Service Investigation.md
+│       │   ├── Assignment 3.4 — Log Analysis Basics.md
+│       │   └── Assignment 3.5 — Permission Vulnerability Scan.md
+│       ├── LEVEL-4, RED TEAM (Think Like an Attacker)/
+│       │   ├── Assignment 4.1 — Persistence via Services.md
+│       │   ├── Assignment 4.2 — Privilege Escalation via Permissions.md
+│       │   ├── Assignment 4.3 — Process Injection Simulation.md
+│       │   ├── Assignment 4.4 — Data Exfiltration via tmp directory.md
+│       │   └── Assignment 4.5 — The Kill Chain Exercise.md
+│       └── LEVEL-5 - Final - ARCHITECT (Defend & Harden)/
+│           ├── Assignment 5.1 — System Hardening Checklist.md
+│           ├── Assignment 5.2 — Build a Security Monitoring Script.md
+│           ├── Assignment 5.3 — Incident Response Drill.md
+│           └── Assignment 5.4 — The Final Boss - Full System Audit.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── MONTH-01-(FEEL KALI AS A HOME)/
+│   ├── Day-07, STATES of Processes.md
+│   ├── Day-08, SERVICES.md
+│   ├── Day-1, Directories.md
+│   ├── Day-2 Shortcuts and Basic Commands.md
+│   ├── Day-3, Permissions.md
+│   ├── Day-4, Ownerships.md
+│   ├── Day-5, Processes.md
+│   ├── Day-6, Signals.md
+│   └── QUOTE for month-1.md
+├── MONTH-02-(NETWORKING BASICS)/
+│   ├── Day-01, All about IP Addresses.md
+│   ├── Day-02, Ports, IP, TCP, UDP.md
+│   ├── Day-03, OSI Model.md
+│   ├── Day-04, Subnetting and CIDR.md
+│   ├── Day-05, Multi Subnetting and Subnet Masks.md
+│   ├── Day-06, ARP.md
+│   ├── Day-07, ARP States.md
+│   ├── Day-08, ARP Poisoning with arpspoof.md
+│   ├── Day-09, DNS.md
+│   ├── Day-10, DNS Record Types and DNS spoofing.md
+│   ├── Day-11, DNS Cache Poisoning.md
+│   ├── Day-12, DNSSEC.md
+│   ├── Day-13, HTTP.md
+│   ├── Day-14, HTTP Methods and Status Codes.md
+│   ├── Day-15, HTTP Headers - Part1.md
+│   ├── Day-16, HTTP Headers - Part2.md
+│   ├── Day-17, HTTP Cookies and Sessions.md
+│   ├── Day-18, HTTP Authentication and Advance HTTP Concepts.md
+│   ├── Day-19, HTTP2 and HTTP3 Advance Concepts.md
+│   ├── Day-20, SMB.md
+│   ├── Day-21, SMB Enumeration (26,27-March-2026).md
+│   ├── Day-22, continue SMB Enumeration.md
+│   ├── Day-23, SMTP.md
+│   ├── Day-24, SMTP Security.md
+│   ├── Day-25, ...continue SMTP.md
+│   └── QUOTES for Month-02.md
+├── README.md
+├── SECURITY.md
+└── SETUP.md
 ```
 <!-- DIRECTORY_TREE_END -->
 
