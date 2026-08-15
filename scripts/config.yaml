@@ -1,0 +1,105 @@
+# -----------------------------------------------------------------------------
+# Module configuration for the self-updating README.
+#
+# You only touch this file when a NEW MONTH starts (once every few weeks) —
+# never when you just add a new Day-XX file. The workflow reads this to know
+# each month's display title and roughly how many days it's expected to run,
+# so it can label a month "Active" vs "Complete" vs "Planned" automatically.
+#
+# folder        -> must exactly match the directory name in the repo
+# title         -> human-readable name shown in the README
+# expected_days -> rough number of days you expect this module to take.
+#                  Once actual day-files >= expected_days, it's marked Complete.
+#                  Doesn't need to be exact — just a reasonable estimate.
+# -----------------------------------------------------------------------------
+
+months:
+  - number: 1
+    folder: "MONTH-01-(FEEL KALI AS A HOME)"
+    title: "Linux Fundamentals"
+    expected_days: 8
+
+  - number: 2
+    folder: "MONTH-02-(NETWORKING BASICS)"
+    title: "Networking Basics"
+    expected_days: 25
+
+  - number: 3
+    folder: "MONTH-03-(DEEP NETWORKING)"
+    title: "Revision & Deep Networking"
+    expected_days: 15
+
+  - number: 4
+    folder: "MONTH-04-(WEB APPLICATION SECURITY)"
+    title: "Web Application Security"
+    expected_days: 20
+
+  - number: 5
+    folder: "MONTH-05-(SYSTEM EXPLOITATION)"
+    title: "System Exploitation & Privilege Escalation"
+    expected_days: 20
+
+  - number: 6
+    folder: "MONTH-06-(WIRELESS AND IOT)"
+    title: "Wireless & IoT Security"
+    expected_days: 15
+
+  - number: 7
+    folder: "MONTH-07-(SOCIAL ENGINEERING)"
+    title: "Social Engineering & OSINT"
+    expected_days: 15
+
+  - number: 8
+    folder: "MONTH-08-(MALWARE ANALYSIS)"
+    title: "Malware Analysis & Reverse Engineering"
+    expected_days: 20
+
+  - number: 9
+    folder: "MONTH-09-(ACTIVE DIRECTORY)"
+    title: "Active Directory Attacks"
+    expected_days: 20
+
+  - number: 10
+    folder: "MONTH-10-(CLOUD SECURITY)"
+    title: "Cloud Security (AWS / Azure / GCP)"
+    expected_days: 20
+
+  - number: 11
+    folder: "MONTH-11-(RED TEAMING)"
+    title: "Red Teaming & APT Simulation"
+    expected_days: 15
+
+  - number: 12
+    folder: "MONTH-12-(BLUE TEAM)"
+    title: "Blue Team & Incident Response"
+    expected_days: 15
+
+  - number: 13
+    folder: "MONTH-13-(ADVANCED PENTESTING)"
+    title: "Advanced Pentesting Techniques"
+    expected_days: 15
+
+  - number: 14
+    folder: "MONTH-14-(MOBILE AND API SECURITY)"
+    title: "Mobile & API Security"
+    expected_days: 15
+
+  - number: 15
+    folder: "MONTH-15-(CRYPTOGRAPHY)"
+    title: "Cryptography & Steganography"
+    expected_days: 10
+
+  - number: 16
+    folder: "MONTH-16-(FORENSICS)"
+    title: "Forensics & Evidence Collection"
+    expected_days: 10
+
+  - number: 17
+    folder: "MONTH-17-(BUG BOUNTY)"
+    title: "Bug Bounty Methodology"
+    expected_days: 10
+
+  - number: 18
+    folder: "MONTH-18-(FINAL REVIEW)"
+    title: "Final Review & Certification Prep"
+    expected_days: 10
