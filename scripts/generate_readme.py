@@ -2,20 +2,16 @@
 """
 Self-updating README generator for My-Notes.
 
-What it does, every time it runs (triggered by GitHub Actions on push):
-  1. Reads scripts/config.yaml for the list of months and their expected length.
-  2. Scans each month folder on disk for Day-*.md files.
-  3. For any file that's new or changed since the last run, asks Claude for a
-     short, consistent one-line "what you'll learn" summary (results are
-     cached in scripts/.summary_cache.json so unchanged files are never
-     re-summarized -- keeps API usage minimal).
-  4. Rebuilds the Roadmap, Module Breakdown, Progress, and Directory Tree
-     sections of README.md between fixed HTML comment markers, leaving
-     everything else (About, Getting Started, Legal, etc.) untouched.
-  5. Writes README.md back to disk only if something actually changed.
-
-Requires: ANTHROPIC_API_KEY in the environment (set as a repo secret).
-No other manual steps are needed once this is wired into the workflow.
+What it does on every push (via GitHub Actions):
+  1. Reads scripts/config.yaml for module configurations.
+  2. Scans each month folder on disk for Day-*.md study notes.
+  3. Automatically computes status:
+     - Previous months with notes are automatically marked 'Complete' when a new month is active.
+     - Current highest month with notes is 'In Progress' (or 'Complete' if reaching expected days).
+     - Months without notes are marked 'Planned'.
+  4. Generates/updates summaries using Google Gemini API (cached in scripts/.summary_cache.json).
+  5. Rebuilds Roadmap, Module Breakdown tables, Progress stats, and Directory Tree.
+  6. Writes README.md back to disk cleanly.
 """
 
 import hashlib
@@ -26,7 +22,6 @@ import sys
 from pathlib import Path
 
 import yaml
-from google import genai
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = REPO_ROOT / "scripts" / "config.yaml"
@@ -42,7 +37,17 @@ MARKERS = {
     "tree": ("<!-- DIRECTORY_TREE_START -->", "<!-- DIRECTORY_TREE_END -->"),
 }
 
-client = genai.Client()  # picks up GEMINI_API_KEY from env
+
+def get_gemini_client():
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return None
+    try:
+        from google import genai
+        return genai.Client()
+    except Exception as e:
+        print(f"Notice: Unable to initialize Gemini client ({e}). Using local extractor fallback.", file=sys.stderr)
+        return None
 
 
 def load_config():
@@ -52,7 +57,10 @@ def load_config():
 
 def load_cache():
     if CACHE_PATH.exists():
-        return json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+        try:
+            return json.loads(CACHE_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
     return {}
 
 
@@ -64,34 +72,83 @@ def file_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 
 
-def summarize_day(title: str, content: str) -> str:
-    """Ask Gemini for a short, consistent 'what you'll learn' line."""
-    prompt = f"""You are writing one line for a study-log README table.
+def extract_smart_fallback(title: str, content: str) -> str:
+    """Intelligent fallback summary generator from file content when API is unavailable."""
+    lines = [line.strip() for line in content.splitlines() if line.strip()]
+    
+    # 1. Look for bold key concepts or bullet points
+    concepts = []
+    for line in lines:
+        if line.startswith("- **") or line.startswith("* **"):
+            m = re.match(r"^[-*]\s*\*\*([^*]+)\*\*", line)
+            if m:
+                concept_name = m.group(1).strip(": ")
+                if len(concept_name) < 40:
+                    concepts.append(concept_name)
+    
+    if len(concepts) >= 2:
+        return f"{', '.join(concepts[:3])} — core concepts & hands-on application"
+    
+    # 2. Look for section headers (H2/H3)
+    headers = []
+    for line in lines:
+        if line.startswith("## ") or line.startswith("### "):
+            h_text = line.lstrip("#").strip()
+            if h_text.lower() not in {"summary", "overview", "introduction", "conclusion", "notes", "assignment"}:
+                headers.append(h_text)
+    
+    if headers:
+        return f"{', '.join(headers[:3])} — practical concepts & command analysis"
+    
+    # 3. Clean sentence fallback
+    for line in lines:
+        if not line.startswith("#") and not line.startswith("---") and not line.startswith(">") and len(line) > 20:
+            clean = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", line)  # remove markdown links
+            clean = re.sub(r"[`*_]", "", clean)
+            return clean[:90].rstrip(".") + "..."
+            
+    return f"{title} notes and practical lab exercises"
 
-File title: {title}
 
-File content (a personal Linux/networking/security study note):
+def summarize_day(client, title: str, content: str) -> str:
+    """Ask Gemini for a short, high-impact 'Key Concepts & Hands-on Focus' summary line."""
+    if not client:
+        return extract_smart_fallback(title, content)
+        
+    prompt = f"""You are writing a concise summary for an Ethical Hacking & Cybersecurity study portfolio README table.
+
+File Title: {title}
+
+File Content (Hands-on study note):
 ---
 {content[:6000]}
 ---
 
-Write ONE line (max 12 words) listing the concrete tools, commands, or
-concepts this note covers, in the same terse style as these examples:
-- "Filesystem hierarchy — /, /etc, /var, /home, /tmp, /root"
-- "chmod, symbolic & numeric modes, file vs. directory permissions"
-- "ARP spoofing with arpspoof"
+Write ONE concise line (max 12 words) summarizing the core tools, commands, protocols, or security concepts covered.
+Focus on actionable technical terms. 
+Style examples:
+- "Filesystem hierarchy, /, /etc, /var, /home, and path navigation"
+- "chmod, symbolic & numeric modes, SUID/SGID, and permission auditing"
+- "ARP protocol architecture, table inspection, and spoofing with arpspoof"
 
-Reply with ONLY that line. No preamble, no quotes, no trailing period."""
+Reply with ONLY the summary line. No preamble, no quotes, no period."""
 
-    resp = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt,
-    )
-    text = (resp.text or "").strip()
-    return text.splitlines()[0].strip() if text else "Notes on this topic"
+    try:
+        resp = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt,
+        )
+        text = (resp.text or "").strip()
+        if text:
+            first_line = text.splitlines()[0].strip().strip('"\'')
+            return first_line
+    except Exception as e:
+        print(f"Warning: Gemini API call failed ({e}). Falling back to local extractor.", file=sys.stderr)
+    
+    return extract_smart_fallback(title, content)
 
 
-def scan_month(folder: Path, cache: dict) -> list[dict]:
+def scan_month(client, folder: Path, cache: dict) -> list[dict]:
     """Return sorted list of {day, title, summary, path} for a month folder."""
     if not folder.exists():
         return []
@@ -102,7 +159,7 @@ def scan_month(folder: Path, cache: dict) -> list[dict]:
             continue
         m = DAY_FILE_RE.search(f.name)
         if not m:
-            continue  # skip non-day files like QUOTES.md
+            continue
         day_num = int(m.group(1))
 
         raw_title = f.stem.split(",", 1)[-1].strip() if "," in f.stem else f.stem
@@ -113,10 +170,10 @@ def scan_month(folder: Path, cache: dict) -> list[dict]:
         h = file_hash(content)
         cache_key = str(f.relative_to(REPO_ROOT))
 
-        if cache.get(cache_key, {}).get("hash") == h:
+        if cache.get(cache_key, {}).get("hash") == h and "summary" in cache[cache_key]:
             summary = cache[cache_key]["summary"]
         else:
-            summary = summarize_day(display_title, content)
+            summary = summarize_day(client, display_title, content)
             cache[cache_key] = {"hash": h, "summary": summary}
 
         days.append({
@@ -132,27 +189,47 @@ def scan_month(folder: Path, cache: dict) -> list[dict]:
 
 def md_link(text: str, path: str) -> str:
     encoded = path.replace(" ", "%20").replace("(", "%28").replace(")", "%29").replace(",", "%2C")
-    return f"[{text}](<{encoded}>)" if " " in path else f"[{text}]({encoded})"
+    return f"[{text}]({encoded})"
 
 
-def build_sections(config, cache):
-    module_data = []
+def build_sections(config, cache, client):
+    month_scans = []
     for m in config:
         folder = REPO_ROOT / m["folder"]
-        days = scan_month(folder, cache)
-        if not days:
+        days = scan_month(client, folder, cache)
+        month_scans.append({**m, "days": days})
+
+    # Find highest month number that has notes
+    months_with_notes = [m["number"] for m in month_scans if m["days"]]
+    max_active_month_num = max(months_with_notes) if months_with_notes else 0
+
+    module_data = []
+    for m in month_scans:
+        num = m["number"]
+        days_count = len(m["days"])
+        target_days = m["expected_days"]
+
+        if not m["days"]:
             status = "Planned"
-        elif len(days) >= m["expected_days"]:
+        elif num < max_active_month_num:
+            # Any lower month with notes is automatically marked Complete when a newer month starts!
             status = "Complete"
+        elif num == max_active_month_num:
+            if days_count >= target_days:
+                status = "Complete"
+            else:
+                status = "Active"
         else:
-            status = "Active"
-        module_data.append({**m, "days": days, "status": status})
+            status = "Planned"
+
+        module_data.append({**m, "status": status})
 
     # ---- Roadmap table ----
-    status_icon = {"Complete": "✅ Complete", "Active": "🔄 In Progress", "Planned": "Planned"}
-    roadmap_lines = ["| # | Module | Status |", "|---|--------|--------|"]
+    status_icon = {"Complete": "✅ Complete", "Active": "🔄 In Progress", "Planned": "📋 Planned"}
+    roadmap_lines = ["| # | Module | Status | Notes Logged |", "|---|--------|:------:|:------------:|"]
     for m in module_data:
-        roadmap_lines.append(f"| {m['number']:02d} | {m['title']} | {status_icon[m['status']]} |")
+        logged = f"{len(m['days'])} days" if m['days'] else "-"
+        roadmap_lines.append(f"| {m['number']:02d} | {m['title']} | {status_icon[m['status']]} | {logged} |")
     roadmap = "\n".join(roadmap_lines)
 
     # ---- Module breakdown ----
@@ -161,27 +238,32 @@ def build_sections(config, cache):
     planned = [m for m in module_data if m["status"] == "Planned"]
 
     for i, m in enumerate(active_or_complete):
-        open_attr = " open" if i == 0 or m["status"] == "Active" else ""
+        open_attr = " open" if m["status"] == "Active" or i == len(active_or_complete) - 1 else ""
         lines = [
             f"<details{open_attr}>",
             f"<summary><strong>Month {m['number']:02d} — {m['title']}</strong> "
-            f"({m['status']} · {len(m['days'])} days)</summary>",
+            f"({status_icon[m['status']]} · {len(m['days'])} Days Logged)</summary>",
             "",
-            "| Day | Topic | Covers |",
-            "|:---:|-------|--------|",
+            "| Day | Topic | Key Concepts & Hands-on Focus |",
+            "|:---:|-------|-------------------------------|",
         ]
         for d in m["days"]:
             link = md_link(d["title"], d["path"])
-            lines.append(f"| {d['day']:02d} | {link} | {d['summary']} |")
+            lines.append(f"| Day {d['day']:02d} | {link} | {d['summary']} |")
         lines.append("")
         lines.append("</details>")
         breakdown_parts.append("\n".join(lines))
 
     if planned:
-        lines = ["<details>", "<summary><strong>Upcoming Modules</strong></summary>", "",
-                  "| Month | Focus Area |", "|:-----:|-----------|"]
+        lines = [
+            "<details>",
+            "<summary><strong>Upcoming Curriculum Modules (Months 03–18)</strong></summary>",
+            "",
+            "| Month | Focus Area | Status |",
+            "|:-----:|-----------|:------:|",
+        ]
         for m in planned:
-            lines.append(f"| {m['number']:02d} | {m['title']} |")
+            lines.append(f"| {m['number']:02d} | {m['title']} | 📋 Planned |")
         lines += ["", "</details>"]
         breakdown_parts.append("\n".join(lines))
 
@@ -189,14 +271,14 @@ def build_sections(config, cache):
 
     # ---- Progress table ----
     total_days = sum(len(m["days"]) for m in module_data)
-    prog_lines = ["| Module | Topic | Progress | Status |", "|--------|-------|:--------:|:------:|"]
-    for m in module_data:
-        target = m["expected_days"]
-        prog_lines.append(
-            f"| {m['number']:02d} | {m['title']} | {len(m['days'])} / {target} | {m['status']} |"
-        )
-    prog_lines.append("")
-    prog_lines.append(f"**Total notes logged: {total_days}**")
+    total_modules_completed = sum(1 for m in module_data if m["status"] == "Complete")
+    prog_lines = [
+        "| Metric | Count | Details |",
+        "|--------|:-----:|---------|",
+        f"| **Modules Completed** | `{total_modules_completed} / {len(module_data)}` | Full monthly study blocks finished |",
+        f"| **Total Study Notes** | `{total_days}` | Structured Markdown notes with terminal logs |",
+        f"| **Current Focus Module** | `Month {max_active_month_num:02d}` | Active focus domain |",
+    ]
     progress_section = "\n".join(prog_lines)
 
     return roadmap, modules_section, progress_section
@@ -233,8 +315,9 @@ def replace_section(readme_text: str, key: str, new_content: str) -> str:
 def main():
     config = load_config()
     cache = load_cache()
+    client = get_gemini_client()
 
-    roadmap, modules_section, progress_section = build_sections(config, cache)
+    roadmap, modules_section, progress_section = build_sections(config, cache, client)
     tree_section = build_tree()
 
     readme = README_PATH.read_text(encoding="utf-8")
