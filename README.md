@@ -166,7 +166,6 @@ My-Notes/
 ├── ASSIGNMENTS/
 ├── MONTH-01-(FEEL KALI AS A HOME)/
 ├── MONTH-02-(NETWORKING BASICS)/
-├── readme-automation/
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE

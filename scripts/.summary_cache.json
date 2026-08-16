@@ -1,4 +1,36 @@
 {
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-07, STATES of Processes.md": {
+    "hash": "96c75547f7ccc038",
+    "summary": "\ud83e\uddca The 4 Main Process States, \ud83d\udd17 States & Signals, \ud83c\udfae Practice Scenarios \u2014 practical concepts & command analysis"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-08, SERVICES.md": {
+    "hash": "443bf62060ba6314",
+    "summary": "Target, Persistence, Privilege \u2014 core concepts & hands-on application"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-1, Directories.md": {
+    "hash": "267183996d39d68e",
+    "summary": "\ud83c\udf33 The Linux Directory Tree, \ud83d\uddfa\ufe0f Key Directories Explained, \u2699\ufe0f The Configuration Hub: `/etc` \u2014 practical concepts & command analysis"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-2 Shortcuts and Basic Commands.md": {
+    "hash": "75af109118dfa529",
+    "summary": "\ud83c\udfb9 Keyboard Shortcuts, \ud83d\udee0\ufe0f Essential Commands, \ud83d\udcc2 Navigation & Listing \u2014 practical concepts & command analysis"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-3, Permissions.md": {
+    "hash": "1e4044a20aad574e",
+    "summary": "\ud83d\udc65 The Three Identities, \ud83d\udea6 The Three Permissions, \ud83d\udee0\ufe0f Changing Permissions: `chmod` \u2014 practical concepts & command analysis"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-4, Ownerships.md": {
+    "hash": "631649c67c9b7b32",
+    "summary": "The Locker, The Key, The Owner \u2014 core concepts & hands-on application"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-5, Processes.md": {
+    "hash": "1b65273ac936e7cb",
+    "summary": "Terminal, Shell, Foreground \u2014 core concepts & hands-on application"
+  },
+  "MONTH-01-(FEEL KALI AS A HOME)/Day-6, Signals.md": {
+    "hash": "8ad5a3c4b85f8bd9",
+    "summary": "Interrupt Signal., Termination Signal., Kill Signal. \u2014 core concepts & hands-on application"
+  },
   "MONTH-01-(FEEL KALI AS A HOME)\\Day-07, STATES of Processes.md": {
     "hash": "96c75547f7ccc038",
     "summary": "\ud83e\uddca The 4 Main Process States, \ud83d\udd17 States & Signals, \ud83c\udfae Practice Scenarios \u2014 practical concepts & command analysis"
@@ -30,6 +62,106 @@
   "MONTH-01-(FEEL KALI AS A HOME)\\Day-6, Signals.md": {
     "hash": "8ad5a3c4b85f8bd9",
     "summary": "Interrupt Signal., Termination Signal., Kill Signal. \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-01, All about IP Addresses.md": {
+    "hash": "89dec7929da008a3",
+    "summary": "Example, Example \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-02, Ports, IP, TCP, UDP.md": {
+    "hash": "a350347f19d2508b",
+    "summary": "IP Header, TCP Header, SYN \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-03, OSI Model.md": {
+    "hash": "c2e2268c87dda0d4",
+    "summary": "Protocols, Functions, Encryption/Decryption \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-04, Subnetting and CIDR.md": {
+    "hash": "908054a0ebc2abb8",
+    "summary": "Example, Example, Analogy \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-05, Multi Subnetting and Subnet Masks.md": {
+    "hash": "fa445f6fe7c32b2b",
+    "summary": "Total IPs, Usable Hosts, Result \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-06, ARP.md": {
+    "hash": "d0804465d4f22d1d",
+    "summary": "Phone IP, Router IP, Router MAC \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-07, ARP States.md": {
+    "hash": "cfaf44c436f774d9",
+    "summary": "INCOMPLETE, REACHABLE, STALE \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-08, ARP Poisoning with arpspoof.md": {
+    "hash": "76e2758ec4aabde4",
+    "summary": "Step 1: Enable IP Forwarding, Step 2: Poison the Victim, Step 3: Poison the Router \u2014 practical concepts & command analysis"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-09, DNS.md": {
+    "hash": "b34698b7f0dc4ad4",
+    "summary": "1\ufe0f\u20e3 Client Request, 2\ufe0f\u20e3 Local Lookup (Before Internet Query), 3\ufe0f\u20e3 Recursive DNS Server \u2014 practical concepts & command analysis"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-10, DNS Record Types and DNS spoofing.md": {
+    "hash": "3f9627c925efbbcc",
+    "summary": "`-T`, `-q`, `-M arp:remote` \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-11, DNS Cache Poisoning.md": {
+    "hash": "39fe3070ff9e8645",
+    "summary": "The Process, The Logic, Infinite Ammo \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-12, DNSSEC.md": {
+    "hash": "03c2828c794433f5",
+    "summary": "Example, Attack, If it matches \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-13, HTTP.md": {
+    "hash": "89b10748656ad3c9",
+    "summary": "Real-Life Example, The Client, The Server \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-14, HTTP Methods and Status Codes.md": {
+    "hash": "82d9a3dd715c039f",
+    "summary": "GET, POST, PUT \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-15, HTTP Headers - Part1.md": {
+    "hash": "087905c1391b7a50",
+    "summary": "No `HttpOnly`, No `Secure`, No `SameSite=Strict` \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-16, HTTP Headers - Part2.md": {
+    "hash": "f127b38efa22fbe7",
+    "summary": "The Outer Guard (Frontend), The Inner Guard (Backend), The Leftover \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-17, HTTP Cookies and Sessions.md": {
+    "hash": "076cc1e39cecce03",
+    "summary": "\ud83d\udce6 1. What is a Cookie?, \ud83d\udd52 2. Sessions, \ud83d\udd0d 3. Login Tracking \u2014 practical concepts & command analysis"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-18, HTTP Authentication and Advance HTTP Concepts.md": {
+    "hash": "2cb65d80d475cfbc",
+    "summary": "Mechanism, Security Note, Example Header \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-19, HTTP2 and HTTP3 Advance Concepts.md": {
+    "hash": "fc3e903803d6fc25",
+    "summary": "Real-Life Example, Text, Binary \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-20, SMB.md": {
+    "hash": "e910520c7ff4bc5d",
+    "summary": "Primary Use, Origin, Network Ports \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-21, SMB Enumeration (26,27-March-2026).md": {
+    "hash": "a087c838395d553f",
+    "summary": "Machine Name, Workgroup, OS Information \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-22, continue SMB Enumeration.md": {
+    "hash": "55fb0c54bf91c8d3",
+    "summary": "The Vulnerability, The Prize, Why? \u2014 core concepts & hands-on application"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-23, SMTP.md": {
+    "hash": "e35111a948751906",
+    "summary": "\ud83c\udfd7\ufe0f 1. What is SMTP?, \u2699\ufe0f 2. How SMTP Works, \ud83d\udd04 The Full Mechanism: \u2014 practical concepts & command analysis"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-24, SMTP Security.md": {
+    "hash": "fb2635e123b30647",
+    "summary": "\ud83d\udccd 1. MX Records (Mail Exchange), \ud83d\udee1\ufe0f 2. Email Security Layers, \ud83d\udccb 1. SPF (Sender Policy Framework) \u2014 practical concepts & command analysis"
+  },
+  "MONTH-02-(NETWORKING BASICS)/Day-25, ...continue SMTP.md": {
+    "hash": "d790bd3b06ed15f4",
+    "summary": "What it is, Examples, Role \u2014 core concepts & hands-on application"
   },
   "MONTH-02-(NETWORKING BASICS)\\Day-01, All about IP Addresses.md": {
     "hash": "89dec7929da008a3",
